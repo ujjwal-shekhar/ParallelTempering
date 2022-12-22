@@ -1,0 +1,807 @@
+Charm++> No provisioning arguments specified. Running with a single PE.
+         Use +auto-provision to fully subscribe resources or +p1 to silence this message.
+Charm++: standalone mode (not using charmrun)
+Charm++> Running in Multicore mode: 1 threads (PEs)
+Charm++> Using recursive bisection (scheme 3) for topology aware partitions
+Converse/Charm++ Commit ID: v6.10.2-0-g7bf00fa-namd-charm-6.10.2-build-2020-Aug-05-556
+Warning> Randomization of virtual memory (ASLR) is turned on in the kernel, thread migration may not work! Run 'echo 0 > /proc/sys/kernel/randomize_va_space' as root to disable it, or try running with '+isomalloc_sync'.
+CharmLB> Load balancer assumes all CPUs are same.
+Charm++> Running on 1 hosts (1 sockets x 8 cores x 2 PUs = 16-way SMP)
+Charm++> cpu topology info is gathered in 0.001 seconds.
+Info: NAMD 2.14 for Linux-x86_64-multicore
+Info: 
+Info: Please visit http://www.ks.uiuc.edu/Research/namd/
+Info: for updates, documentation, and support information.
+Info: 
+Info: Please cite Phillips et al., J. Chem. Phys. 153:044130 (2020) doi:10.1063/5.0014475
+Info: in all publications reporting results obtained with NAMD.
+Info: 
+Info: Based on Charm++/Converse 61002 for multicore-linux-x86_64-iccstatic
+Info: Built Mon Aug 24 10:08:36 CDT 2020 by jim on belfast.ks.uiuc.edu
+Info: 1 NAMD  2.14  Linux-x86_64-multicore  1    radhikesh  radhikesh
+Info: Running on 1 processors, 1 nodes, 1 physical nodes.
+Info: CPU topology information available.
+Info: Charm++/Converse parallel runtime startup completed at 0.00162735 s
+CkLoopLib is used in SMP with simple dynamic scheduling (converse-level notification)
+Info: 31.082 MB of memory in use based on /proc/self/stat
+Info: Configuration file is main/output_10/prod.inp
+Info: Changed directory to main/output_10
+TCL: Suspending until startup complete.
+Info: EXTENDED SYSTEM FILE   ./../output_10/prod_0/prod.xsc
+Info: SIMULATION PARAMETERS:
+Info: TIMESTEP               1
+Info: NUMBER OF STEPS        0
+Info: STEPS PER CYCLE        20
+Info: PERIODIC CELL BASIS 1  29.6935 0 0
+Info: PERIODIC CELL BASIS 2  0 27.7778 0
+Info: PERIODIC CELL BASIS 3  0 0 36.3985
+Info: PERIODIC CELL CENTER   2.47456 -0.373263 6.1751
+Info: WRAPPING WATERS AROUND PERIODIC BOUNDARIES ON OUTPUT.
+Info: WRAPPING ALL CLUSTERS AROUND PERIODIC BOUNDARIES ON OUTPUT.
+Info: LOAD BALANCER  Centralized
+Info: LOAD BALANCING STRATEGY  New Load Balancers -- DEFAULT
+Info: LDB PERIOD             4000 steps
+Info: FIRST LDB TIMESTEP     100
+Info: LAST LDB TIMESTEP     -1
+Info: LDB BACKGROUND SCALING 1
+Info: HOM BACKGROUND SCALING 1
+Info: PME BACKGROUND SCALING 1
+Info: MIN ATOMS PER PATCH    40
+Info: VELOCITY FILE          ./../output_10/prod_0/prod.vel
+Info: CENTER OF MASS MOVING INITIALLY? NO
+Info: DIELECTRIC             1
+Info: EXCLUDE                SCALED ONE-FOUR
+Info: 1-4 ELECTROSTATICS SCALED BY 1
+Info: MODIFIED 1-4 VDW PARAMETERS WILL BE USED
+Info: DCD FILENAME           ./prod_1/prod.dcd
+Info: DCD FREQUENCY          1000
+Info: DCD FIRST STEP         1000
+Info: DCD FILE WILL CONTAIN UNIT CELL DATA
+Info: XST FILENAME           ./prod_1/prod.xst
+Info: XST FREQUENCY          1000
+Info: NO VELOCITY DCD OUTPUT
+Info: NO FORCE DCD OUTPUT
+Info: OUTPUT FILENAME        ./prod_1/prod
+Info: BINARY OUTPUT FILES WILL BE USED
+Info: RESTART FILENAME       ./prod_1/prod.restart
+Info: RESTART FREQUENCY      1000
+Info: BINARY RESTART FILES WILL BE USED
+Info: SWITCHING ACTIVE
+Info: VDW FORCE SWITCHING ACTIVE
+Info: SWITCHING ON           10
+Info: SWITCHING OFF          12
+Info: PAIRLIST DISTANCE      16
+Info: PAIRLIST SHRINK RATE   0.01
+Info: PAIRLIST GROW RATE     0.01
+Info: PAIRLIST TRIGGER       0.3
+Info: PAIRLISTS PER CYCLE    2
+Info: PAIRLISTS ENABLED
+Info: MARGIN                 0.555
+Info: HYDROGEN GROUP CUTOFF  2.5
+Info: PATCH DIMENSION        19.055
+Info: ENERGY OUTPUT STEPS    1000
+Info: CROSSTERM ENERGY INCLUDED IN DIHEDRAL
+Info: TIMING OUTPUT STEPS    1000
+Info: LANGEVIN DYNAMICS ACTIVE
+Info: LANGEVIN TEMPERATURE   390
+Info: LANGEVIN USING BBK INTEGRATOR
+Info: LANGEVIN DAMPING COEFFICIENT IS 1 INVERSE PS
+Info: LANGEVIN DYNAMICS NOT APPLIED TO HYDROGENS
+Info: LANGEVIN PISTON PRESSURE CONTROL ACTIVE
+Info:        TARGET PRESSURE IS 1 BAR
+Info:     OSCILLATION PERIOD IS 50 FS
+Info:             DECAY TIME IS 25 FS
+Info:     PISTON TEMPERATURE IS 390 K
+Info:       PRESSURE CONTROL IS GROUP-BASED
+Info:    INITIAL STRAIN RATE IS 0.000833223 0.000833223 0.000833223
+Info:       CELL FLUCTUATION IS ISOTROPIC
+Info: PARTICLE MESH EWALD (PME) ACTIVE
+Info: PME TOLERANCE               1e-06
+Info: PME EWALD COEFFICIENT       0.257952
+Info: PME INTERPOLATION ORDER     6
+Info: PME GRID DIMENSIONS         32 28 40
+Info: PME MAXIMUM GRID SPACING    1
+Info: Attempting to read FFTW data from FFTW_NAMD_2.14_Linux-x86_64-multicore.txt
+Info: Optimizing 6 FFT steps.  1... 2... 3... 4... 5... 6...   Done.
+Info: Writing FFTW data to FFTW_NAMD_2.14_Linux-x86_64-multicore.txt
+Info: FULL ELECTROSTATIC EVALUATION FREQUENCY      1
+Info: USING VERLET I (r-RESPA) MTS SCHEME.
+Info: C1 SPLITTING OF LONG RANGE ELECTROSTATICS
+Info: PLACING ATOMS IN PATCHES BY HYDROGEN GROUPS
+Info: RIGID BONDS TO HYDROGEN : ALL
+Info:         ERROR TOLERANCE : 1e-08
+Info:          MAX ITERATIONS : 100
+Info: RIGID WATER USING SETTLE ALGORITHM
+Info: RANDOM NUMBER SEED     1656452512
+Info: USE HYDROGEN BONDS?    NO
+Info: COORDINATE PDB         ./../decaalanine_solvated.pdb
+Info: STRUCTURE FILE         ./../decaalanine_solvated.psf
+Info: PARAMETER file: CHARMM format! 
+Info: PARAMETERS             ./../toppar/par_all36m_prot.prm
+Info: PARAMETERS             ./../toppar/par_all36_na.prm
+Info: PARAMETERS             ./../toppar/par_all36_carb.prm
+Info: PARAMETERS             ./../toppar/par_all36_lipid.prm
+Info: PARAMETERS             ./../toppar/par_all36_cgenff.prm
+Info: PARAMETERS             ./../toppar/par_interface.prm
+Info: PARAMETERS             ./../toppar/toppar_all36_moreions.str
+Info: PARAMETERS             ./../toppar/toppar_all36_nano_lig.str
+Info: PARAMETERS             ./../toppar/toppar_all36_nanolig_patch.str
+Info: PARAMETERS             ./../toppar/toppar_all36_synthetic_polymer.str
+Info: PARAMETERS             ./../toppar/toppar_all36_synthetic_polymer_patch.str
+Info: PARAMETERS             ./../toppar/toppar_all36_polymer_solvent.str
+Info: PARAMETERS             ./../toppar/toppar_water_ions.str
+Info: PARAMETERS             ./../toppar/toppar_dum_noble_gases.str
+Info: PARAMETERS             ./../toppar/toppar_ions_won.str
+Info: PARAMETERS             ./../toppar/toppar_all36_prot_arg0.str
+Info: PARAMETERS             ./../toppar/toppar_all36_prot_c36m_d_aminoacids.str
+Info: PARAMETERS             ./../toppar/toppar_all36_prot_fluoro_alkanes.str
+Info: PARAMETERS             ./../toppar/toppar_all36_prot_heme.str
+Info: PARAMETERS             ./../toppar/toppar_all36_prot_na_combined.str
+Info: PARAMETERS             ./../toppar/toppar_all36_prot_retinol.str
+Info: PARAMETERS             ./../toppar/toppar_all36_prot_modify_res.str
+Info: PARAMETERS             ./../toppar/toppar_all36_na_nad_ppi.str
+Info: PARAMETERS             ./../toppar/toppar_all36_na_rna_modified.str
+Info: PARAMETERS             ./../toppar/toppar_all36_lipid_archaeal.str
+Info: PARAMETERS             ./../toppar/toppar_all36_lipid_bacterial.str
+Info: PARAMETERS             ./../toppar/toppar_all36_lipid_cardiolipin.str
+Info: PARAMETERS             ./../toppar/toppar_all36_lipid_cholesterol.str
+Info: PARAMETERS             ./../toppar/toppar_all36_lipid_dag.str
+Info: PARAMETERS             ./../toppar/toppar_all36_lipid_inositol.str
+Info: PARAMETERS             ./../toppar/toppar_all36_lipid_lnp.str
+Info: PARAMETERS             ./../toppar/toppar_all36_lipid_lps.str
+Info: PARAMETERS             ./../toppar/toppar_all36_lipid_mycobacterial.str
+Info: PARAMETERS             ./../toppar/toppar_all36_lipid_miscellaneous.str
+Info: PARAMETERS             ./../toppar/toppar_all36_lipid_model.str
+Info: PARAMETERS             ./../toppar/toppar_all36_lipid_prot.str
+Info: PARAMETERS             ./../toppar/toppar_all36_lipid_sphingo.str
+Info: PARAMETERS             ./../toppar/toppar_all36_lipid_tag.str
+Info: PARAMETERS             ./../toppar/toppar_all36_lipid_yeast.str
+Info: PARAMETERS             ./../toppar/toppar_all36_lipid_hmmm.str
+Info: PARAMETERS             ./../toppar/toppar_all36_lipid_detergent.str
+Info: PARAMETERS             ./../toppar/toppar_all36_lipid_ether.str
+Info: PARAMETERS             ./../toppar/toppar_all36_carb_glycolipid.str
+Info: PARAMETERS             ./../toppar/toppar_all36_carb_glycopeptide.str
+Info: PARAMETERS             ./../toppar/toppar_all36_carb_imlab.str
+Info: PARAMETERS             ./../toppar/toppar_all36_label_spin.str
+Info: PARAMETERS             ./../toppar/toppar_all36_label_fluorophore.str
+Info: USING ARITHMETIC MEAN TO COMBINE L-J SIGMA PARAMETERS
+Info: BINARY COORDINATES     ./../output_10/prod_0/prod.coor
+
+Warning: DUPLICATE ANGLE ENTRY FOR CG2D1-CG321-NG311
+PREVIOUS VALUES  k=78  theta0=110 k_ub=0 r_ub=0
+   USING VALUES  k=57  theta0=107 k_ub=0 r_ub=0
+
+Warning: DUPLICATE ANGLE ENTRY FOR CG331-CG2D1-CG331
+PREVIOUS VALUES  k=55  theta0=119 k_ub=0 r_ub=0
+   USING VALUES  k=48  theta0=123.5 k_ub=0 r_ub=0
+
+Warning: DUPLICATE ANGLE ENTRY FOR CG1N1-CG321-HGA2
+PREVIOUS VALUES  k=50  theta0=109 k_ub=0 r_ub=0
+   USING VALUES  k=50  theta0=110.5 k_ub=0 r_ub=0
+
+Warning: DUPLICATE ANGLE ENTRY FOR CG321-NG311-CG331
+PREVIOUS VALUES  k=48  theta0=112.2 k_ub=38 r_ub=2.35
+   USING VALUES  k=40.5  theta0=109.6 k_ub=0 r_ub=0
+
+Warning: DUPLICATE ANGLE ENTRY FOR CG2O2-CG311-OG311
+PREVIOUS VALUES  k=110  theta0=106.7 k_ub=0 r_ub=0
+   USING VALUES  k=112  theta0=111 k_ub=0 r_ub=0
+
+Warning: DUPLICATE ANGLE ENTRY FOR CG2O3-CG311-OG311
+PREVIOUS VALUES  k=80  theta0=107 k_ub=0 r_ub=0
+   USING VALUES  k=45  theta0=109 k_ub=0 r_ub=0
+
+Warning: DUPLICATE ANGLE ENTRY FOR CG2R61-CG311-OG311
+PREVIOUS VALUES  k=82  theta0=112.8 k_ub=0 r_ub=0
+   USING VALUES  k=75.7  theta0=110.1 k_ub=0 r_ub=0
+
+Warning: DUPLICATE DIHEDRAL ENTRY FOR CG321-CG321-CG321-NG311
+PREVIOUS VALUES MULTIPLICITY: 1
+  k=0.3  n=3  delta=0
+INCREASING MULTIPLICITY TO: 2
+  k=0.39  n=2  delta=0
+
+Warning: DUPLICATE DIHEDRAL ENTRY FOR HGA3-CG331-NG311-CG321
+PREVIOUS VALUES MULTIPLICITY: 1
+  k=0.5  n=3  delta=0
+Warning: IDENTICAL PERIODICITY! REPLACING OLD VALUES BY: 
+  k=0  n=3  delta=180
+
+Warning: DUPLICATE DIHEDRAL ENTRY FOR CG331-CG321-CG321-NG311
+PREVIOUS VALUES MULTIPLICITY: 1
+  k=0.3  n=3  delta=0
+INCREASING MULTIPLICITY TO: 2
+  k=0.16  n=1  delta=180
+
+Warning: DUPLICATE DIHEDRAL ENTRY FOR CG2D1-CG2D1-CG321-NG311
+PREVIOUS VALUES MULTIPLICITY: 2
+  k=1.6  n=1  delta=180
+Warning: IDENTICAL PERIODICITY! REPLACING OLD VALUES BY: 
+  k=0.6  n=1  delta=180
+
+Warning: DUPLICATE DIHEDRAL ENTRY FOR CG2D1-CG321-NG311-CG321
+PREVIOUS VALUES MULTIPLICITY: 3
+  k=1.1  n=1  delta=180
+  k=0.6  n=2  delta=180
+Warning: IDENTICAL PERIODICITY! REPLACING OLD VALUES BY: 
+  k=1.5  n=2  delta=0
+Warning: IDENTICAL PERIODICITY! REPLACING OLD VALUES BY: 
+  k=2.5  n=1  delta=180
+
+Warning: DUPLICATE DIHEDRAL ENTRY FOR CG2D1-CG321-CG321-CG2D1
+PREVIOUS VALUES MULTIPLICITY: 2
+  k=0.9  n=1  delta=180
+  k=0.3  n=3  delta=180
+Warning: IDENTICAL PERIODICITY! REPLACING OLD VALUES BY: 
+  k=0.2  n=3  delta=0
+
+Warning: DUPLICATE DIHEDRAL ENTRY FOR CG2D1-CG321-NG311-HGPAM1
+PREVIOUS VALUES MULTIPLICITY: 1
+  k=0.48  n=3  delta=0
+Warning: IDENTICAL PERIODICITY! REPLACING OLD VALUES BY: 
+  k=0.16  n=3  delta=0
+
+Warning: DUPLICATE DIHEDRAL ENTRY FOR HGA2-CG321-NG311-CG331
+PREVIOUS VALUES MULTIPLICITY: 1
+  k=0.4  n=3  delta=0
+Warning: IDENTICAL PERIODICITY! REPLACING OLD VALUES BY: 
+  k=0  n=3  delta=180
+
+Warning: DUPLICATE DIHEDRAL ENTRY FOR HGA4-CG2D1-CG321-NG311
+PREVIOUS VALUES MULTIPLICITY: 1
+  k=0.26  n=3  delta=0
+Warning: IDENTICAL PERIODICITY! REPLACING OLD VALUES BY: 
+  k=0.2  n=3  delta=0
+
+Warning: DUPLICATE DIHEDRAL ENTRY FOR CG2R61-CG311-OG311-HGP1
+PREVIOUS VALUES MULTIPLICITY: 3
+  k=1.08  n=1  delta=0
+  k=0.54  n=2  delta=0
+  k=0.77  n=3  delta=0
+Warning: IDENTICAL PERIODICITY! REPLACING OLD VALUES BY: 
+  k=0.74  n=3  delta=0
+Warning: IDENTICAL PERIODICITY! REPLACING OLD VALUES BY: 
+  k=1.4  n=2  delta=0
+Warning: IDENTICAL PERIODICITY! REPLACING OLD VALUES BY: 
+  k=2.1  n=1  delta=0
+
+Warning: DUPLICATE DIHEDRAL ENTRY FOR OG2D2-CG2O3-CG311-OG311
+PREVIOUS VALUES MULTIPLICITY: 1
+  k=0.85  n=2  delta=180
+Warning: IDENTICAL PERIODICITY! REPLACING OLD VALUES BY: 
+  k=0.55  n=2  delta=180
+
+Warning: DUPLICATE DIHEDRAL ENTRY FOR OG302-CG2O2-CG311-OG311
+PREVIOUS VALUES MULTIPLICITY: 2
+  k=0.4  n=2  delta=180
+  k=0.1  n=6  delta=0
+Warning: IDENTICAL PERIODICITY! REPLACING OLD VALUES BY: 
+  k=0.05  n=6  delta=180
+
+Warning: DUPLICATE DIHEDRAL ENTRY FOR CG2O3-CG311-OG311-HGP1
+PREVIOUS VALUES MULTIPLICITY: 3
+  k=0.3  n=1  delta=0
+  k=0.3  n=2  delta=180
+  k=0.4  n=3  delta=0
+Warning: IDENTICAL PERIODICITY! REPLACING OLD VALUES BY: 
+  k=0.01  n=3  delta=180
+Warning: IDENTICAL PERIODICITY! REPLACING OLD VALUES BY: 
+  k=0.37  n=2  delta=0
+Warning: IDENTICAL PERIODICITY! REPLACING OLD VALUES BY: 
+  k=0.35  n=1  delta=0
+
+Warning: DUPLICATE DIHEDRAL ENTRY FOR CG2O2-CG311-OG311-HGP1
+PREVIOUS VALUES MULTIPLICITY: 3
+  k=0.85  n=1  delta=180
+  k=0.38  n=2  delta=180
+Warning: IDENTICAL PERIODICITY! REPLACING OLD VALUES BY: 
+  k=0.37  n=2  delta=0
+Warning: IDENTICAL PERIODICITY! REPLACING OLD VALUES BY: 
+  k=0.35  n=1  delta=0
+Warning: IDENTICAL PERIODICITY! REPLACING OLD VALUES BY: 
+  k=0.01  n=3  delta=180
+
+Warning: DUPLICATE DIHEDRAL ENTRY FOR CG331-CG2D1-CG321-OG311
+PREVIOUS VALUES MULTIPLICITY: 3
+  k=0.25  n=1  delta=180
+  k=0.52  n=2  delta=180
+  k=0.23  n=3  delta=180
+Warning: IDENTICAL PERIODICITY! REPLACING OLD VALUES BY: 
+  k=0.19  n=3  delta=0
+
+Warning: DUPLICATE DIHEDRAL ENTRY FOR OG311-CG2O2-CG311-OG311
+PREVIOUS VALUES MULTIPLICITY: 1
+  k=0.46  n=2  delta=180
+INCREASING MULTIPLICITY TO: 2
+  k=0  n=6  delta=180
+
+Warning: DUPLICATE DIHEDRAL ENTRY FOR OG2D1-CG2O2-CG311-OG311
+PREVIOUS VALUES MULTIPLICITY: 1
+  k=0.55  n=2  delta=180
+Warning: IDENTICAL PERIODICITY! REPLACING OLD VALUES BY: 
+  k=0  n=2  delta=0
+
+Warning: DUPLICATE DIHEDRAL ENTRY FOR CG2R61-CG2R61-CG311-OG311
+PREVIOUS VALUES MULTIPLICITY: 1
+  k=0.7  n=2  delta=180
+Warning: IDENTICAL PERIODICITY! REPLACING OLD VALUES BY: 
+  k=0  n=2  delta=0
+Warning: SKIPPING PART OF PARAMETER FILE AFTER RETURN STATEMENT
+
+Warning: DUPLICATE ANGLE ENTRY FOR CG2R61-CG2R61-OG301
+PREVIOUS VALUES  k=110  theta0=120 k_ub=0 r_ub=0
+   USING VALUES  k=56  theta0=124.5 k_ub=0 r_ub=0
+
+Warning: DUPLICATE ANGLE ENTRY FOR CTL3-CEL1-CTL3
+PREVIOUS VALUES  k=48  theta0=123.5 k_ub=0 r_ub=0
+   USING VALUES  k=58.35  theta0=113.5 k_ub=11.16 r_ub=2.561
+Warning: SKIPPING PART OF PARAMETER FILE AFTER RETURN STATEMENT
+
+Warning: DUPLICATE ANGLE ENTRY FOR CTL1-CTO1-CTO1
+PREVIOUS VALUES  k=52  theta0=108 k_ub=0 r_ub=0
+   USING VALUES  k=58.35  theta0=113.5 k_ub=11.16 r_ub=2.561
+
+Warning: DUPLICATE ANGLE ENTRY FOR C-CTO1-HAL1
+PREVIOUS VALUES  k=50  theta0=109.5 k_ub=0 r_ub=0
+   USING VALUES  k=33  theta0=109.5 k_ub=30 r_ub=2.163
+Warning: IDENTICAL PERIODICITY! REPLACING OLD VALUES BY: 
+  k=1.3  n=3  delta=180
+
+Warning: DUPLICATE DIHEDRAL ENTRY FOR NHL-C-CTO1-HAL1
+PREVIOUS VALUES MULTIPLICITY: 1
+  k=0  n=1  delta=0
+INCREASING MULTIPLICITY TO: 2
+  k=0  n=3  delta=0
+
+Warning: DUPLICATE DIHEDRAL ENTRY FOR X-CTO1-CTO1-X
+PREVIOUS VALUES MULTIPLICITY: 1
+  k=0.2  n=3  delta=0
+Warning: IDENTICAL PERIODICITY! REPLACING OLD VALUES BY: 
+  k=0.14  n=3  delta=0
+
+Warning: DUPLICATE DIHEDRAL ENTRY FOR O-C-CTO1-HAL1
+PREVIOUS VALUES MULTIPLICITY: 1
+  k=0  n=1  delta=0
+INCREASING MULTIPLICITY TO: 2
+  k=0  n=2  delta=180
+
+Warning: DUPLICATE BOND ENTRY FOR CEL3-CTL3
+PREVIOUS VALUES  k=383  x0=1.504
+   USING VALUES  k=365  x0=1.502
+
+Warning: DUPLICATE ANGLE ENTRY FOR CEL3-CTL3-HAL3
+PREVIOUS VALUES  k=42  theta0=111.5 k_ub=0 r_ub=0
+   USING VALUES  k=45  theta0=111.5 k_ub=0 r_ub=0
+
+Warning: DUPLICATE DIHEDRAL ENTRY FOR HEL1-CEL3-CEL3-CTL3
+PREVIOUS VALUES MULTIPLICITY: 1
+  k=1  n=2  delta=0
+INCREASING MULTIPLICITY TO: 2
+  k=0.15  n=1  delta=180
+Warning: IDENTICAL PERIODICITY! REPLACING OLD VALUES BY: 
+  k=8.5  n=2  delta=180
+
+Warning: DUPLICATE DIHEDRAL ENTRY FOR CG331-CG301-CG321-CG301
+PREVIOUS VALUES MULTIPLICITY: 1
+  k=0.2  n=3  delta=0
+INCREASING MULTIPLICITY TO: 2
+  k=0.44  n=1  delta=0
+
+Warning: DUPLICATE DIHEDRAL ENTRY FOR CG331-CG301-CG321-CG301
+PREVIOUS VALUES MULTIPLICITY: 2
+  k=0.2  n=3  delta=0
+  k=0.44  n=1  delta=0
+INCREASING MULTIPLICITY TO: 3
+  k=0.02  n=2  delta=180
+
+Warning: DUPLICATE DIHEDRAL ENTRY FOR CG331-CG301-CG321-CG301
+PREVIOUS VALUES MULTIPLICITY: 3
+  k=0.2  n=3  delta=0
+Warning: IDENTICAL PERIODICITY! REPLACING OLD VALUES BY: 
+  k=0.73  n=3  delta=180
+
+Warning: DUPLICATE DIHEDRAL ENTRY FOR NG311-CG321-CG321-NG311
+PREVIOUS VALUES MULTIPLICITY: 2
+  k=0.25  n=1  delta=180
+  k=1.24  n=2  delta=0
+INCREASING MULTIPLICITY TO: 3
+  k=0.3  n=3  delta=0
+
+Warning: DUPLICATE BOND ENTRY FOR CG2O1-CG2R51
+PREVIOUS VALUES  k=280  x0=1.475
+   USING VALUES  k=300  x0=1.475
+
+Warning: DUPLICATE ANGLE ENTRY FOR CG2R51-CG2O1-NG2S1
+PREVIOUS VALUES  k=52  theta0=115.5 k_ub=0 r_ub=0
+   USING VALUES  k=80  theta0=116.5 k_ub=0 r_ub=0
+
+Warning: DUPLICATE ANGLE ENTRY FOR CG2R51-CG2O1-OG2D1
+PREVIOUS VALUES  k=45  theta0=122 k_ub=0 r_ub=0
+   USING VALUES  k=30  theta0=121 k_ub=0 r_ub=0
+
+Warning: DUPLICATE ANGLE ENTRY FOR CG2O1-CG2R51-CG2R51
+PREVIOUS VALUES  k=35  theta0=130 k_ub=0 r_ub=0
+   USING VALUES  k=45.8  theta0=130 k_ub=0 r_ub=0
+
+Warning: DUPLICATE ANGLE ENTRY FOR CG2R53-NG2R53-CG3RC1
+PREVIOUS VALUES  k=75  theta0=112 k_ub=0 r_ub=0
+   USING VALUES  k=75  theta0=111 k_ub=0 r_ub=0
+
+Warning: DUPLICATE DIHEDRAL ENTRY FOR NG2S1-CG2O1-CG2R51-CG2R51
+PREVIOUS VALUES MULTIPLICITY: 2
+  k=1.1  n=2  delta=180
+Warning: IDENTICAL PERIODICITY! REPLACING OLD VALUES BY: 
+  k=1  n=2  delta=180
+
+Warning: DUPLICATE DIHEDRAL ENTRY FOR OG2D1-CG2O1-CG2R51-CG2R51
+PREVIOUS VALUES MULTIPLICITY: 2
+  k=1.1  n=2  delta=180
+Warning: IDENTICAL PERIODICITY! REPLACING OLD VALUES BY: 
+  k=1  n=2  delta=180
+
+Warning: DUPLICATE DIHEDRAL ENTRY FOR CG2R51-CG2O1-NG2S1-HGP1
+PREVIOUS VALUES MULTIPLICITY: 1
+  k=1  n=2  delta=180
+Warning: IDENTICAL PERIODICITY! REPLACING OLD VALUES BY: 
+  k=2.5  n=2  delta=180
+
+Warning: DUPLICATE IMPROPER DIHEDRAL ENTRY FOR CG2O1-CG2R51-NG2S1-OG2D1
+PREVIOUS VALUES MULTIPLICITY 1
+  k=70  n=0  delta=0
+USING VALUES MULTIPLICITY 1
+  k=120  n=0  delta=0Info: SUMMARY OF PARAMETERS:
+Info: 1858 BONDS
+Info: 5968 ANGLES
+Info: 16480 DIHEDRAL
+Info: 374 IMPROPER
+Info: 16 CROSSTERM
+Info: 717 VDW
+Info: 124 VDW_PAIRS
+Info: 0 NBTHOLE_PAIRS
+Info: TIME FOR READING PSF FILE: 0.0251757
+Info: Reading pdb file ./../decaalanine_solvated.pdb
+Info: TIME FOR READING PDB FILE: 0.00185244
+Info: 
+Info: ****************************
+Info: STRUCTURE SUMMARY:
+Info: 2797 ATOMS
+Info: 1898 BONDS
+Info: 1081 ANGLES
+Info: 249 DIHEDRALS
+Info: 19 IMPROPERS
+Info: 8 CROSSTERMS
+Info: 0 EXCLUSIONS
+Info: 2746 RIGID BONDS
+Info: 5645 DEGREES OF FREEDOM
+Info: 949 HYDROGEN GROUPS
+Info: 4 ATOMS IN LARGEST HYDROGEN GROUP
+Info: 949 MIGRATION GROUPS
+Info: 4 ATOMS IN LARGEST MIGRATION GROUP
+Info: TOTAL MASS = 16906.6 amu
+Info: TOTAL CHARGE = 5.96046e-08 e
+Info: MASS DENSITY = 0.935131 g/cm^3
+Info: ATOM DENSITY = 0.0931641 atoms/A^3
+Info: *****************************
+Info: Reading from binary file ./../output_10/prod_0/prod.coor
+Info: 
+Info: Entering startup at 5.00761 s, 50.0586 MB of memory in use
+Info: Startup phase 0 took 2.9506e-05 s, 50.0586 MB of memory in use
+Info: ADDED 3228 IMPLICIT EXCLUSIONS
+Info: Startup phase 1 took 0.00110927 s, 51.0703 MB of memory in use
+Info: NONBONDED TABLE R-SQUARED SPACING: 0.0625
+Info: NONBONDED TABLE SIZE: 769 POINTS
+Info: ABSOLUTE IMPRECISION IN FAST TABLE FORCE: 2.64698e-23 AT 11.9138
+Info: RELATIVE IMPRECISION IN FAST TABLE FORCE: 1.40436e-16 AT 11.9138
+Info: INCONSISTENCY IN FAST TABLE ENERGY VS FORCE: 0.000325096 AT 11.9556
+Info: ABSOLUTE IMPRECISION IN SCOR TABLE FORCE: 4.10282e-22 AT 11.9138
+Info: RELATIVE IMPRECISION IN SCOR TABLE FORCE: 3.56912e-15 AT 11.9138
+Info: INCONSISTENCY IN SCOR TABLE ENERGY VS FORCE: 0.000324844 AT 11.9556
+Info: ABSOLUTE IMPRECISION IN VDWA TABLE ENERGY: 9.86076e-32 AT 11.8295
+Info: RELATIVE IMPRECISION IN VDWA TABLE ENERGY: 3.37915e-14 AT 11.9138
+Info: ABSOLUTE IMPRECISION IN VDWA TABLE FORCE: 1.38667e-32 AT 11.9138
+Info: RELATIVE IMPRECISION IN VDWA TABLE FORCE: 1.51174e-15 AT 11.9138
+Info: INCONSISTENCY IN VDWA TABLE ENERGY VS FORCE: 0.0040507 AT 0.251946
+Info: ABSOLUTE IMPRECISION IN VDWB TABLE ENERGY: 1.03398e-25 AT 11.8295
+Info: RELATIVE IMPRECISION IN VDWB TABLE ENERGY: 2.7691e-14 AT 11.9138
+Info: ABSOLUTE IMPRECISION IN VDWB TABLE FORCE: 1.61559e-27 AT 11.9138
+Info: RELATIVE IMPRECISION IN VDWB TABLE FORCE: 1.496e-16 AT 11.9138
+Info: INCONSISTENCY IN VDWB TABLE ENERGY VS FORCE: 0.00150189 AT 0.251946
+Info: Startup phase 2 took 0.00772418 s, 66.7617 MB of memory in use
+Info: Startup phase 3 took 2.7892e-05 s, 66.7617 MB of memory in use
+Info: Startup phase 4 took 2.2666e-05 s, 66.7617 MB of memory in use
+Info: Startup phase 5 took 7.909e-06 s, 66.7617 MB of memory in use
+Info: PATCH GRID IS 1 (PERIODIC) BY 1 (PERIODIC) BY 1 (PERIODIC)
+Info: PATCH GRID IS 1-AWAY BY 1-AWAY BY 1-AWAY
+Info: Reading from binary file ./../output_10/prod_0/prod.vel
+Info: REMOVING COM VELOCITY -0.103374 -0.0854088 -0.153207
+Info: LARGEST PATCH (0) HAS 2797 ATOMS
+Info: TORUS A SIZE 1 USING 0
+Info: TORUS B SIZE 1 USING 0
+Info: TORUS C SIZE 1 USING 0
+Info: TORUS MINIMAL MESH SIZE IS 1 BY 1 BY 1
+Info: Placed 100% of base nodes on same physical node as patch
+Info: Startup phase 6 took 0.000418209 s, 67.4883 MB of memory in use
+Info: PME using 1 and 1 processors for FFT and reciprocal sum.
+Info: PME GRID LOCATIONS: 0
+Info: PME TRANS LOCATIONS: 0
+Info: PME USING 1 GRID NODES AND 1 TRANS NODES
+Info: Optimizing 4 FFT steps.  1... 2... 3... 4...   Done.
+Info: Startup phase 7 took 5.9716e-05 s, 67.4883 MB of memory in use
+Info: Startup phase 8 took 9.214e-06 s, 67.4883 MB of memory in use
+Info: Startup phase 9 took 8.369e-06 s, 67.4883 MB of memory in use
+Info: Startup phase 10 took 7.584e-06 s, 67.4883 MB of memory in use
+Info: Startup phase 11 took 8.521e-06 s, 67.4883 MB of memory in use
+LDB: Central LB being created...
+Info: Startup phase 12 took 1.5627e-05 s, 67.4883 MB of memory in use
+Info: CREATING 25 COMPUTE OBJECTS
+Info: Startup phase 13 took 7.2124e-05 s, 67.4883 MB of memory in use
+Info: Startup phase 14 took 1.0737e-05 s, 67.4883 MB of memory in use
+Info: Startup phase 15 took 8.549e-06 s, 67.4883 MB of memory in use
+Info: Finished startup at 5.01715 s, 67.4883 MB of memory in use
+
+TCL: Running for 20000 steps
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG            PRESSURE      GPRESSURE         VOLUME       PRESSAVG      GPRESSAVG
+
+ENERGY:       0        21.8855        77.3107        31.3064         6.3134          -8622.3215       749.9007         0.0000         0.0000      2133.0504          -5602.5543       380.3011     -7735.6047     -5601.3569       380.3011            -14.2349       -19.5367     30022.3085       -14.2349       -19.5367
+
+OPENING EXTENDED SYSTEM TRAJECTORY FILE
+LDB: ============= START OF LOAD BALANCING ============== 5.24312
+LDB: ============== END OF LOAD BALANCING =============== 5.24314
+LDB: =============== DONE WITH MIGRATION ================ 5.24316
+LDB: ============= START OF LOAD BALANCING ============== 6.11681
+LDB: ============== END OF LOAD BALANCING =============== 6.11684
+LDB: =============== DONE WITH MIGRATION ================ 6.11686
+Info: Initial time: 1 CPUs 0.0109533 s/step 0.126774 days/ns 77.6328 MB memory
+LDB: ============= START OF LOAD BALANCING ============== 6.334
+LDB: ============== END OF LOAD BALANCING =============== 6.33402
+LDB: =============== DONE WITH MIGRATION ================ 6.33403
+LDB: ============= START OF LOAD BALANCING ============== 7.18481
+LDB: ============== END OF LOAD BALANCING =============== 7.18483
+LDB: =============== DONE WITH MIGRATION ================ 7.18485
+Info: Initial time: 1 CPUs 0.01067 s/step 0.123496 days/ns 77.6328 MB memory
+LDB: ============= START OF LOAD BALANCING ============== 8.21938
+LDB: ============== END OF LOAD BALANCING =============== 8.21941
+LDB: =============== DONE WITH MIGRATION ================ 8.21944
+Info: Initial time: 1 CPUs 0.0103401 s/step 0.119678 days/ns 77.6328 MB memory
+LDB: ============= START OF LOAD BALANCING ============== 9.23401
+LDB: ============== END OF LOAD BALANCING =============== 9.23404
+LDB: =============== DONE WITH MIGRATION ================ 9.23406
+Info: Benchmark time: 1 CPUs 0.0101382 s/step 0.117341 days/ns 77.6328 MB memory
+Info: Benchmark time: 1 CPUs 0.0099741 s/step 0.115441 days/ns 77.6328 MB memory
+Info: Benchmark time: 1 CPUs 0.00981595 s/step 0.113611 days/ns 77.6328 MB memory
+Info: Benchmark time: 1 CPUs 0.0096279 s/step 0.111434 days/ns 77.6328 MB memory
+Info: Benchmark time: 1 CPUs 0.00950701 s/step 0.110035 days/ns 77.6328 MB memory
+Info: Benchmark time: 1 CPUs 0.00943488 s/step 0.1092 days/ns 77.6328 MB memory
+TIMING: 1000  CPU: 10.0138, 0.00999178/step  Wall: 10.0165, 0.00999106/step, 0.0527306 hours remaining, 77.632812 MB of memory in use.
+ENERGY:    1000        20.0050        80.6064        32.3407        10.6812          -8633.7911       741.0324         0.0000         0.0000      2142.1563          -5606.9690       381.9246     -7749.1253     -5605.7965       387.7611            242.4573       243.5926     30717.1171       -26.7754       -26.2216
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 1000
+OPENING COORDINATE DCD FILE
+WRITING COORDINATES TO DCD FILE ./prod_1/prod.dcd AT STEP 1000
+WRITING COORDINATES TO RESTART FILE AT STEP 1000
+FINISHED WRITING RESTART COORDINATES
+The last position output (seq=1000) takes 0.000 seconds, 77.633 MB of memory in use
+WRITING VELOCITIES TO RESTART FILE AT STEP 1000
+FINISHED WRITING RESTART VELOCITIES
+The last velocity output (seq=1000) takes 0.000 seconds, 77.633 MB of memory in use
+TIMING: 2000  CPU: 19.5936, 0.00957978/step  Wall: 19.5974, 0.00958089/step, 0.0479044 hours remaining, 77.632812 MB of memory in use.
+ENERGY:    2000        16.0673        73.7865        26.1467         5.6154          -8628.7707       750.1632         0.0000         0.0000      2148.1713          -5608.8202       382.9970     -7756.9915     -5607.9694       384.9732            379.9137       400.3215     29978.7133        -9.9971       -10.1725
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 2000
+WRITING COORDINATES TO DCD FILE ./prod_1/prod.dcd AT STEP 2000
+WRITING COORDINATES TO RESTART FILE AT STEP 2000
+FINISHED WRITING RESTART COORDINATES
+The last position output (seq=2000) takes 0.000 seconds, 77.633 MB of memory in use
+WRITING VELOCITIES TO RESTART FILE AT STEP 2000
+FINISHED WRITING RESTART VELOCITIES
+The last velocity output (seq=2000) takes 0.000 seconds, 77.633 MB of memory in use
+TIMING: 3000  CPU: 29.1614, 0.00956779/step  Wall: 29.1648, 0.00956746/step, 0.0451797 hours remaining, 77.632812 MB of memory in use.
+ENERGY:    3000        25.9844        67.4110        26.8899         2.6780          -8673.5627       757.7736         0.0000         0.0000      2164.9645          -5627.8612       385.9910     -7792.8257     -5626.1967       383.9703            180.0234       173.2372     29968.2394         7.9450         7.8468
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 3000
+WRITING COORDINATES TO DCD FILE ./prod_1/prod.dcd AT STEP 3000
+WRITING COORDINATES TO RESTART FILE AT STEP 3000
+FINISHED WRITING RESTART COORDINATES
+The last position output (seq=3000) takes 0.000 seconds, 77.633 MB of memory in use
+WRITING VELOCITIES TO RESTART FILE AT STEP 3000
+FINISHED WRITING RESTART VELOCITIES
+The last velocity output (seq=3000) takes 0.000 seconds, 77.633 MB of memory in use
+TIMING: 4000  CPU: 38.8051, 0.00964376/step  Wall: 38.8067, 0.00964185/step, 0.0428527 hours remaining, 77.632812 MB of memory in use.
+ENERGY:    4000        32.5754        70.9517        25.4182         1.8000          -8555.7353       701.0468         0.0000         0.0000      2116.8473          -5607.0958       377.4122     -7723.9431     -5605.9233       386.7196           -391.9302      -384.1078     30517.4421         7.4749         7.8736
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 4000
+WRITING COORDINATES TO DCD FILE ./prod_1/prod.dcd AT STEP 4000
+WRITING COORDINATES TO RESTART FILE AT STEP 4000
+FINISHED WRITING RESTART COORDINATES
+The last position output (seq=4000) takes 0.000 seconds, 77.633 MB of memory in use
+WRITING VELOCITIES TO RESTART FILE AT STEP 4000
+FINISHED WRITING RESTART VELOCITIES
+The last velocity output (seq=4000) takes 0.000 seconds, 77.633 MB of memory in use
+LDB: ============= START OF LOAD BALANCING ============== 46.651
+LDB: ============== END OF LOAD BALANCING =============== 46.651
+LDB: =============== DONE WITH MIGRATION ================ 46.651
+LDB: ============= START OF LOAD BALANCING ============== 47.5916
+LDB: ============== END OF LOAD BALANCING =============== 47.5916
+LDB: =============== DONE WITH MIGRATION ================ 47.5916
+TIMING: 5000  CPU: 48.1841, 0.00937896/step  Wall: 48.1898, 0.00938309/step, 0.0390962 hours remaining, 77.632812 MB of memory in use.
+ENERGY:    5000        32.0978        79.7769        28.1821         4.9891          -8600.9799       793.1308         0.0000         0.0000      2145.8638          -5516.9395       382.5856     -7662.8033     -5515.8817       385.4013            674.4880       671.6797     30880.9436         6.2644         6.4562
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 5000
+WRITING COORDINATES TO DCD FILE ./prod_1/prod.dcd AT STEP 5000
+WRITING COORDINATES TO RESTART FILE AT STEP 5000
+FINISHED WRITING RESTART COORDINATES
+The last position output (seq=5000) takes 0.000 seconds, 77.633 MB of memory in use
+WRITING VELOCITIES TO RESTART FILE AT STEP 5000
+FINISHED WRITING RESTART VELOCITIES
+The last velocity output (seq=5000) takes 0.000 seconds, 77.633 MB of memory in use
+TIMING: 6000  CPU: 57.7039, 0.00951977/step  Wall: 57.707, 0.00951722/step, 0.0370114 hours remaining, 77.632812 MB of memory in use.
+ENERGY:    6000        24.2077        79.5942        33.5206         3.1988          -8604.9563       751.7336         0.0000         0.0000      2154.8853          -5557.8162       384.1940     -7712.7015     -5557.7945       389.2728            242.1814       231.2182     30528.8989        11.6372        11.6982
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 6000
+WRITING COORDINATES TO DCD FILE ./prod_1/prod.dcd AT STEP 6000
+WRITING COORDINATES TO RESTART FILE AT STEP 6000
+FINISHED WRITING RESTART COORDINATES
+The last position output (seq=6000) takes 0.000 seconds, 77.633 MB of memory in use
+WRITING VELOCITIES TO RESTART FILE AT STEP 6000
+FINISHED WRITING RESTART VELOCITIES
+TIMING: 7000  CPU: 67.2373, 0.00953343/step  Wall: 67.2586, 0.00955161/step, 0.0344919 hours remaining, 77.632812 MB of memory in use.
+ENERGY:    7000        15.9703        53.2133        31.3963         5.1178          -8537.5696       704.9801         0.0000         0.0000      2240.8384          -5486.0535       399.5186     -7726.8918     -5484.4332       390.1808             28.1813        36.3172     30713.7880       -15.0240       -15.5357
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 7000
+WRITING COORDINATES TO DCD FILE ./prod_1/prod.dcd AT STEP 7000
+WRITING COORDINATES TO RESTART FILE AT STEP 7000
+FINISHED WRITING RESTART COORDINATES
+The last position output (seq=7000) takes 0.000 seconds, 77.633 MB of memory in use
+WRITING VELOCITIES TO RESTART FILE AT STEP 7000
+FINISHED WRITING RESTART VELOCITIES
+TIMING: 8000  CPU: 76.7247, 0.00948742/step  Wall: 76.746, 0.00948743/step, 0.0316248 hours remaining, 77.632812 MB of memory in use.
+ENERGY:    8000        26.7411        81.9866        32.5938         4.5548          -8611.8454       709.7351         0.0000         0.0000      2227.9197          -5528.3144       397.2153     -7756.2340     -5527.2655       392.5428           -454.9282      -458.7483     30492.8394        10.3396        10.4596
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 8000
+WRITING COORDINATES TO DCD FILE ./prod_1/prod.dcd AT STEP 8000
+WRITING COORDINATES TO RESTART FILE AT STEP 8000
+FINISHED WRITING RESTART COORDINATES
+The last position output (seq=8000) takes 0.000 seconds, 77.633 MB of memory in use
+WRITING VELOCITIES TO RESTART FILE AT STEP 8000
+FINISHED WRITING RESTART VELOCITIES
+LDB: ============= START OF LOAD BALANCING ============== 84.614
+LDB: ============== END OF LOAD BALANCING =============== 84.6141
+LDB: =============== DONE WITH MIGRATION ================ 84.6141
+LDB: ============= START OF LOAD BALANCING ============== 85.5668
+LDB: ============== END OF LOAD BALANCING =============== 85.5668
+LDB: =============== DONE WITH MIGRATION ================ 85.5669
+TIMING: 9000  CPU: 86.2472, 0.00952249/step  Wall: 86.2724, 0.00952639/step, 0.0291084 hours remaining, 77.632812 MB of memory in use.
+ENERGY:    9000        23.2766        81.4838        30.0551         3.6923          -8450.0645       645.6883         0.0000         0.0000      2252.8720          -5412.9964       401.6640     -7665.8684     -5411.8432       393.9231           -634.9260      -620.0029     30332.8594        29.4598        29.5125
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 9000
+WRITING COORDINATES TO DCD FILE ./prod_1/prod.dcd AT STEP 9000
+WRITING COORDINATES TO RESTART FILE AT STEP 9000
+FINISHED WRITING RESTART COORDINATES
+The last position output (seq=9000) takes 0.000 seconds, 77.633 MB of memory in use
+WRITING VELOCITIES TO RESTART FILE AT STEP 9000
+FINISHED WRITING RESTART VELOCITIES
+TIMING: 10000  CPU: 95.8898, 0.0096426/step  Wall: 95.9152, 0.00964283/step, 0.0267856 hours remaining, 77.632812 MB of memory in use.
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG            PRESSURE      GPRESSURE         VOLUME       PRESSAVG      GPRESSAVG
+
+ENERGY:   10000        22.6595        80.8525        26.8872         4.2768          -8486.6870       659.6896         0.0000         0.0000      2179.6786          -5512.6427       388.6144     -7692.3213     -5512.4685       394.0026           -674.6329      -674.3645     30751.4315        20.2170        20.4040
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 10000
+WRITING COORDINATES TO DCD FILE ./prod_1/prod.dcd AT STEP 10000
+WRITING COORDINATES TO RESTART FILE AT STEP 10000
+FINISHED WRITING RESTART COORDINATES
+The last position output (seq=10000) takes 0.000 seconds, 77.633 MB of memory in use
+WRITING VELOCITIES TO RESTART FILE AT STEP 10000
+FINISHED WRITING RESTART VELOCITIES
+TIMING: 11000  CPU: 105.386, 0.00949578/step  Wall: 105.414, 0.00949843/step, 0.0237461 hours remaining, 77.632812 MB of memory in use.
+ENERGY:   11000        30.0355        76.4278        21.5229         5.3498          -8501.1320       631.0541         0.0000         0.0000      2245.5197          -5491.2220       400.3532     -7736.7418     -5490.3672       393.6799           -954.5166      -951.6923     30514.0581         8.0539         7.9254
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 11000
+WRITING COORDINATES TO DCD FILE ./prod_1/prod.dcd AT STEP 11000
+WRITING COORDINATES TO RESTART FILE AT STEP 11000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 11000
+FINISHED WRITING RESTART VELOCITIES
+TIMING: 12000  CPU: 114.901, 0.00951577/step  Wall: 114.929, 0.00951524/step, 0.021145 hours remaining, 77.632812 MB of memory in use.
+ENERGY:   12000        20.9877        76.6440        28.2710         3.6060          -8483.1666       713.9204         0.0000         0.0000      2143.8635          -5495.8741       382.2289     -7639.7376     -5494.5166       391.9349            147.3264       145.5247     30870.4088        -6.5736        -5.9834
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 12000
+WRITING COORDINATES TO DCD FILE ./prod_1/prod.dcd AT STEP 12000
+WRITING COORDINATES TO RESTART FILE AT STEP 12000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 12000
+FINISHED WRITING RESTART VELOCITIES
+LDB: ============= START OF LOAD BALANCING ============== 122.821
+LDB: ============== END OF LOAD BALANCING =============== 122.821
+LDB: =============== DONE WITH MIGRATION ================ 122.821
+LDB: ============= START OF LOAD BALANCING ============== 123.783
+LDB: ============== END OF LOAD BALANCING =============== 123.783
+LDB: =============== DONE WITH MIGRATION ================ 123.783
+TIMING: 13000  CPU: 124.516, 0.00961421/step  Wall: 124.559, 0.00962998/step, 0.018725 hours remaining, 77.632812 MB of memory in use.
+ENERGY:   13000        33.8540        64.0791        26.1482         4.3067          -8606.6950       761.7200         0.0000         0.0000      2204.2818          -5512.3052       393.0009     -7716.5870     -5510.7601       390.6484            357.7049       357.7629     30118.0789        20.4933        20.1854
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 13000
+WRITING COORDINATES TO DCD FILE ./prod_1/prod.dcd AT STEP 13000
+WRITING COORDINATES TO RESTART FILE AT STEP 13000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 13000
+FINISHED WRITING RESTART VELOCITIES
+TIMING: 14000  CPU: 134.099, 0.00958298/step  Wall: 134.144, 0.00958563/step, 0.015976 hours remaining, 77.632812 MB of memory in use.
+ENERGY:   14000        13.1607        63.0248        28.9789         3.1596          -8474.6149       710.1560         0.0000         0.0000      2142.4839          -5513.6511       381.9830     -7656.1350     -5511.6724       393.2018            518.0100       527.4138     30508.9249         1.5365         2.1931
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 14000
+WRITING COORDINATES TO DCD FILE ./prod_1/prod.dcd AT STEP 14000
+WRITING COORDINATES TO RESTART FILE AT STEP 14000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 14000
+FINISHED WRITING RESTART VELOCITIES
+TIMING: 15000  CPU: 143.662, 0.00956356/step  Wall: 143.707, 0.00956214/step, 0.0132808 hours remaining, 77.632812 MB of memory in use.
+ENERGY:   15000        26.5105        85.0547        24.9653         6.9635          -8609.5878       658.4520         0.0000         0.0000      2202.6740          -5604.9678       392.7142     -7807.6417     -5603.0112       391.0084           -979.1963     -1001.6313     30474.5924       -16.6713       -16.8740
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 15000
+WRITING COORDINATES TO DCD FILE ./prod_1/prod.dcd AT STEP 15000
+WRITING COORDINATES TO RESTART FILE AT STEP 15000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 15000
+FINISHED WRITING RESTART VELOCITIES
+TIMING: 16000  CPU: 153.219, 0.00955739/step  Wall: 153.286, 0.009579/step, 0.0106433 hours remaining, 77.632812 MB of memory in use.
+ENERGY:   16000        20.7881        71.7155        26.1043         8.9912          -8498.5132       682.9887         0.0000         0.0000      2216.0371          -5471.8881       395.0968     -7687.9253     -5471.1765       394.8565             29.2341        23.3691     30574.1812        20.4102        20.6154
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 16000
+WRITING COORDINATES TO DCD FILE ./prod_1/prod.dcd AT STEP 16000
+WRITING COORDINATES TO RESTART FILE AT STEP 16000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 16000
+FINISHED WRITING RESTART VELOCITIES
+LDB: ============= START OF LOAD BALANCING ============== 161.158
+LDB: ============== END OF LOAD BALANCING =============== 161.158
+LDB: =============== DONE WITH MIGRATION ================ 161.158
+LDB: ============= START OF LOAD BALANCING ============== 162.131
+LDB: ============== END OF LOAD BALANCING =============== 162.131
+LDB: =============== DONE WITH MIGRATION ================ 162.131
+TIMING: 17000  CPU: 162.825, 0.00960546/step  Wall: 162.893, 0.00960736/step, 0.00800613 hours remaining, 77.632812 MB of memory in use.
+ENERGY:   17000        27.1878        74.4050        33.8949         6.7449          -8603.4520       728.6807         0.0000         0.0000      2235.5190          -5497.0197       398.5702     -7732.5387     -5496.6044       394.4102            135.1363       120.5652     30374.3229         6.2982         6.6472
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 17000
+WRITING COORDINATES TO DCD FILE ./prod_1/prod.dcd AT STEP 17000
+WRITING COORDINATES TO RESTART FILE AT STEP 17000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 17000
+FINISHED WRITING RESTART VELOCITIES
+TIMING: 18000  CPU: 172.328, 0.00950298/step  Wall: 172.396, 0.00950342/step, 0.00527968 hours remaining, 77.632812 MB of memory in use.
+ENERGY:   18000        25.6716        75.1054        31.2201         4.9600          -8531.8011       680.7631         0.0000         0.0000      2154.1582          -5559.9228       384.0644     -7714.0810     -5560.3917       390.1260           -877.0287      -880.5075     31183.5947        20.8045        20.8435
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 18000
+WRITING COORDINATES TO DCD FILE ./prod_1/prod.dcd AT STEP 18000
+WRITING COORDINATES TO RESTART FILE AT STEP 18000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 18000
+FINISHED WRITING RESTART VELOCITIES
+TIMING: 19000  CPU: 181.951, 0.00962298/step  Wall: 182.019, 0.00962238/step, 0.00267288 hours remaining, 77.632812 MB of memory in use.
+ENERGY:   19000        22.2115        66.3718        28.5515         4.2474          -8627.2490       774.4131         0.0000         0.0000      2203.1166          -5528.3372       392.7932     -7731.4537     -5526.5988       386.7118            361.6470       370.5148     30313.6540         7.4882         7.3492
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 19000
+WRITING COORDINATES TO DCD FILE ./prod_1/prod.dcd AT STEP 19000
+WRITING COORDINATES TO RESTART FILE AT STEP 19000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 19000
+FINISHED WRITING RESTART VELOCITIES
+TIMING: 20000  CPU: 191.5, 0.00954922/step  Wall: 191.589, 0.00956994/step, 0 hours remaining, 77.632812 MB of memory in use.
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG            PRESSURE      GPRESSURE         VOLUME       PRESSAVG      GPRESSAVG
+
+ENERGY:   20000        20.1564        66.6276        29.9799         6.8540          -8567.2841       687.6287         0.0000         0.0000      2178.9564          -5577.0811       388.4857     -7756.0375     -5575.2120       389.9439           -183.3992      -188.8987     30376.9121         3.0489         2.8567
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 20000
+WRITING COORDINATES TO DCD FILE ./prod_1/prod.dcd AT STEP 20000
+WRITING COORDINATES TO RESTART FILE AT STEP 20000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 20000
+FINISHED WRITING RESTART VELOCITIES
+WRITING EXTENDED SYSTEM TO OUTPUT FILE AT STEP 20000
+CLOSING EXTENDED SYSTEM TRAJECTORY FILE
+WRITING COORDINATES TO OUTPUT FILE AT STEP 20000
+CLOSING COORDINATE DCD FILE ./prod_1/prod.dcd
+WRITING VELOCITIES TO OUTPUT FILE AT STEP 20000
+====================================================
+
+WallClock: 196.627747  CPUTime: 196.520096  Memory: 77.632812 MB
+[Partition 0][Node 0] End of program
